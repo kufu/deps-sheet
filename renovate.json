@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>kufu/renovate-config"],
+  "npm": {
+    "packageRules": [
+      {
+        "matchDepTypes": ["devDependencies"],
+        "matchUpdateTypes": ["minor", "patch"],
+        "automerge": true
+      }
+    ],
+    "postUpdateOptions": ["pnpmDedupe"]
+  }
+}
