@@ -20,6 +20,7 @@ pnpm clasp-login
 また、この時のログイン情報は `~/.clasprc.json` に保存され、PC環境下においてグローバルな情報として扱われる点に注意してください。
 
 続いて、デプロイ先となるGASプロジェクトを紐づけます。`.clasp.json` の `scriptId` にGASプロジェクトのスクリプトIDを入力してください。
+スクリプトIDはGASプロジェクトの識別子です。GASプロジェクトの［プロジェクトの設定］画面で確認できます。
 
 ```json
 {
@@ -28,8 +29,6 @@ pnpm clasp-login
   "rootDir": "./"
 }
 ```
-
-スクリプトIDはGASプロジェクトの識別子です。GASプロジェクトの［プロジェクトの設定］画面で確認できます。
 
 ### GASのビルド
 
@@ -44,7 +43,7 @@ pnpm build
 ビルドで生成した `dist/main.js` をGASプロジェクトにデプロイします。
 
 ```sh
-pnpm push
+pnpm clasp-push
 ```
 
 ### GASの実行
