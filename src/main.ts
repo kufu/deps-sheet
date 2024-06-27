@@ -61,7 +61,10 @@ global.main = () => {
     const { packageJsonUrls, gitHubToken } = getScriptProperties()
 
     const spreadsheet = SpreadsheetApp.getActiveSpreadsheet()
-    const sheet = spreadsheet.getActiveSheet()
+    const sheet = spreadsheet.getSheetByName('マスター') ?? spreadsheet.getActiveSheet()
+    if (!sheet) {
+      throw new Error('シートが見つかりません')
+    }
 
     const packageJsons = fetchPackageJsons(packageJsonUrls, gitHubToken)
     const csv = createCsv(packageJsons)
