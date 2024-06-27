@@ -1,4 +1,4 @@
-# DepSheet
+# deps-sheet
 
 | library     | prj_01  | prj_02  | prj_03  |
 | ----------- | ------- | ------- | ------- |
@@ -10,7 +10,7 @@
 | webpack     |         | ^5.92.1 | ^5.92.1 |
 
 
-DepSheetは、フロントエンドのライブラリの利用状況を一覧化するためのGoogle Apps Script（以下GAS）です。GASプロジェクトから、複数のGitHubリポジトリのpackage.jsonを参照し、dependencies・devDependenciesの内容を整理してGoogleスプレッドシートに出力します。
+deps-sheetは、フロントエンドのライブラリの利用状況を一覧化するためのGoogle Apps Script（以下GAS）です。GASプロジェクトから、複数のGitHubリポジトリのpackage.jsonを参照し、dependencies・devDependenciesの内容を整理してGoogleスプレッドシートに出力します。
 
 ## 使い方
 
