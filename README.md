@@ -1,5 +1,15 @@
 # DepSheet
 
+| library     | prj_01  | prj_02  | prj_03  |
+| ----------- | ------- | ------- | ------- |
+| dayjs       | ^1.11.11 | ^1.11.7 |         |
+| moment      |         |         | ^2.30.1 |
+| react       | ^18.3.1 | ^17.0.2 |         |
+| react-redux |         | ^9.1.2  |         |
+| vite        | ^5.3.1  | ^5.92.1 | ^5.92.1 |
+| webpack     |         | ^5.92.1 | ^5.92.1 |
+
+
 DepSheetは、フロントエンドのライブラリの利用状況を一覧化するためのGoogle Apps Script（以下GAS）です。GASプロジェクトから、複数のGitHubリポジトリのpackage.jsonを参照し、dependencies・devDependenciesの内容を整理してGoogleスプレッドシートに出力します。
 
 ## 使い方
